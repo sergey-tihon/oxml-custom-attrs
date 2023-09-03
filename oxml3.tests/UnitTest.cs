@@ -41,7 +41,7 @@ public class SdkTests
             var mainPart = doc.MainDocumentPart!;
             var xDocument = mainPart.GetXDocument();
             AssignUnidToAllElements(xDocument.Root!);
-            IgnorePt14Namespace(xDocument.Root);
+            IgnorePt14Namespace(xDocument.Root!);
             mainPart.PutXDocument();
         }
         
